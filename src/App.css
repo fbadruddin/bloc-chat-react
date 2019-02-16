@@ -31,3 +31,18 @@
     transform: rotate(360deg);
   }
 }
+
+#sidebar {
+  height: 100vh;
+  background-color: #D3D3D3;
+}
+
+h1 {
+  text-align: center
+}
+ul {
+  list-style-type: none;
+}
+.rooms-center {
+  text-align: center
+}
