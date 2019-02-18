@@ -28,6 +28,17 @@ class RoomList extends Component {
       this.roomsRef.push(newRoom.value);
       newRoom.value='';
   }
+
+  onChangeHandled(e) {
+      if(e.target.value != '')
+      {
+        document.getElementById('create').disabled = false;
+      }
+      else
+      {
+        document.getElementById('create').disabled = true;
+      }
+  }
  
   render() {
       return (
@@ -40,9 +51,9 @@ class RoomList extends Component {
             }
             </ul>
             <form>
-                <input className="form-control" type="text" id="newRoom" />
+                <input className="form-control" type="text" id="newRoom" onChange ={(e) => this.onChangeHandled(e)} autoComplete="off"/>
                 <p></p>
-                <input type="button" id="create" className="btn btn-primary" value="Create" onClick={(e) => this.createRoom(e)} />
+                <input type="button" id="create" className="btn btn-primary" value="Create" onClick={(e) => this.createRoom(e)} disabled="disabled"/>
             </form>
         </div> 
       )
