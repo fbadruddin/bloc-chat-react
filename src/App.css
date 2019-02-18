@@ -46,3 +46,10 @@ ul {
 .rooms-center {
   text-align: center
 }
+
+.Messages-list {
+  height: 90%;
+}
+.Messagelist-header {
+  text-align:left;
+}
