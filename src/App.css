@@ -37,12 +37,25 @@
   background-color: #D3D3D3;
 }
 
+#divbottom {
+    height: 50px;
+    width: 100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
 h1 {
   text-align: center
 }
+
 ul {
   list-style-type: none;
 }
+
+#newMessage {
+  background-color:none;
+}
+
 .rooms-center {
   text-align: center
 }
@@ -52,4 +65,9 @@ ul {
 }
 .Messagelist-header {
   text-align:left;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }

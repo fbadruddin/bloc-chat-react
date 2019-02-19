@@ -41,10 +41,10 @@ class App extends Component {
           <div id="sidebar" className="col-sm-3">
             <User firebase={firebase} setUser={this.setUser.bind(this)} user={this.state.signedInUser} />
             <h1>Bloc Chat</h1>
-            <RoomList firebase={firebase} activeRoom={this.state.activeRoom} setActiveRoom={this.setActiveRoom.bind(this)} /> 
+            <RoomList firebase={firebase} activeRoom={this.state.activeRoom} setActiveRoom={this.setActiveRoom.bind(this)} user={this.state.signedInUser} /> 
           </div>
           <div className="col-sm-9" id="messages">
-            <MessageList firebase={firebase} activeRoom={this.state.activeRoom} />
+            <MessageList firebase={firebase} activeRoom={this.state.activeRoom} user={this.state.signedInUser} />
           </div>
         </div>
       </div>
